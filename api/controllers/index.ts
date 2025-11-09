@@ -1,5 +1,1 @@
-import { userController } from "./userController.js";
-
-export {
-    userController
-}
+export * from "./userController.js";

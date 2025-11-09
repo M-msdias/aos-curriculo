@@ -12,7 +12,7 @@ export const userService = {
                 orderBy: [desc(usersTable.created_at)],
             },
             experiences: {
-                orderBy: [desc(usersTable.created_at)],
+                orderBy: [desc(experience.created_at)],
             },
         },
         });

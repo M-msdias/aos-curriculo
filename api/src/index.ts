@@ -10,7 +10,7 @@ app.use(express.json());
 app.get("/", async (req, res) => {
     const result = await db.select().from(usersTable);
     return res.json(result)
-})
+});
 
 app.use("/users", routes.userRoutes);
 
