@@ -1,0 +1,35 @@
+{
+  "name": "aos-curriculo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsx watch api/src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "migrate": "tsx migrate.ts",
+    "studio": "drizzle-kit studio"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@neondatabase/serverless": "^1.0.2",
+    "dotenv": "^17.2.3",
+    "drizzle-orm": "^0.44.6",
+    "express": "^5.1.0",
+    "pg": "^8.16.3"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.5",
+    "@types/node": "^20.14.10",
+    "@types/pg": "^8.11.6",
+    "drizzle-kit": "^0.31.6",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  },
+  "packageManager": "npm@11.5.2+sha512.aac1241cfc3f41dc38780d64295c6c6b917a41e24288b33519a7b11adfc5a54a5f881c642d7557215b6c70e01e55655ed7ba666300fd0238bc75fb17478afaf3"
+}
