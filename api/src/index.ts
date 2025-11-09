@@ -13,6 +13,7 @@ app.get("/", async (req, res) => {
 });
 
 app.use("/users", routes.userRoutes);
+app.use("/skills", routes.skillRoutes);
 
 app.listen(3000, () => {
     console.log("Server on port 3000.");
