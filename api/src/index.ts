@@ -14,6 +14,7 @@ app.get("/", async (req, res) => {
 
 app.use("/users", routes.userRoutes);
 app.use("/skills", routes.skillRoutes);
+app.use("/experiences", routes.experienceRoutes);
 
 if (process.env.NODE_ENV !== 'production') {
     app.listen(3000, () => {

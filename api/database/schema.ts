@@ -7,8 +7,9 @@ import {
   date,
 } from "drizzle-orm/pg-core";
 import { relations } from "drizzle-orm";
+import { start } from "repl";
 
-export const usersTable = pgTable("user", {
+export const usersTable = pgTable("users", { 
   id: integer("id").generatedAlwaysAsIdentity().primaryKey(),
   full_name: varchar("full_name").notNull(),
   birth_date: date("birth_date").notNull(),
@@ -33,6 +34,8 @@ export const experience = pgTable("experience", {
   user_id: integer("user_id")
     .notNull()
     .references(() => usersTable.id, { onDelete: "cascade" }),
+  start: date("start").notNull(),
+  end: date("end").notNull(),
   content: text("content").notNull(),
   created_at: timestamp("created_at").defaultNow().notNull(),
   updated_at: timestamp("updated_at").notNull(),
